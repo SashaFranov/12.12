@@ -1,39 +1,3 @@
-<?php
-/** @var $content */
-use app\assets\LendingAsset;
-
-LendingAsset::register($this);
-
-?>
-<?php $this->beginPage() ?>
-<!doctype html>
-<html lang="<?= Yii::$app->language ?>">
-<head>
-    <title><?= $this -> title ?></title>
-    <?php $this->head() ?>
-</head>
-<body>
-<?php $this->beginBody() ?>
-<img class="bg" src="../images/banner-bg.svg" alt="banner-bg">
-<a href="#header" class="up"><i class="lni-chevron-up"></i></a>
-<header id="header">
-    <div class="container header">
-        <a class="logo" href="#"><img src="../images/logo.svg" alt=""></a>
-        <nav>
-            <a href="">Home</a>
-            <a href="info">Features</a>
-            <a href="about">About</a>
-            <a href="why">Why</a>
-            <a href="team">Team</a>
-            <a href="blog">Blog</a>
-        </nav>
-        <a class="btn" href="#">Free Trial</a>
-    </div>
-</header>
-<div>
-
-    <?= $content?>
-</div>
 <div class="contact_block">
     <div class="title"><b>Subscribe Our Newsletter</b><br> get regular update</div>
     <form>
@@ -83,7 +47,3 @@ LendingAsset::register($this);
         </div>
     </div>
     <img class="footer_bg" src="../images/footer-bg.svg" alt="footer_bg">
-<?php $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage() ?>
